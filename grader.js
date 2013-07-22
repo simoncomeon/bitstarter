@@ -24,13 +24,15 @@ References:
 var fs = require('fs');
 var program = require('commander');
 var cheerio = require('cheerio');
+var sys = require('util');
+var rest = require('restler');
 var HTMLFILE_DEFAULT = "index.html";
 var CHECKSFILE_DEFAULT = "checks.json";
 
 var assertFileExists = function(infile) {
     var instr = infile.toString();
     if(!fs.existsSync(instr)) {
-        console.log("%s does not exist. Exiting.", instr);
+        console.log("%s does not exist /Existerar ej. Exiting.", instr);
         process.exit(1); // http://nodejs.org/api/process.html#process_process_exit_code
     }
     return instr;
@@ -61,13 +63,27 @@ var clone = function(fn) {
     return fn.bind({});
 };
 
+
+
 if(require.main == module) {
     program
         .option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
         .option('-f, --file <html_file>', 'Path to index.html', clone(assertFileExists), HTMLFILE_DEFAULT)
+        .option('-u, --url','Path to external url')
         .parse(process.argv);
-    var checkJson = checkHtmlFile(program.file, program.checks);
-    var outJson = JSON.stringify(checkJson, null, 4);
+
+  if(program.url){
+  rest.get('http://www.google.com').on('complete',function(result){
+        outJson = checkHtmlFile(result,program.checks);
+	console.log (outJson);
+   });
+} 
+  if(program.file){
+    var checkJson = checkHtmlFile(program.file, program.checks); }
+  else { console.log(" couldn't find file or url as parameter");
+}
+      
+  var outJson = JSON.stringify(checkJson, null, 4);
     console.log(outJson);
 } else {
     exports.checkHtmlFile = checkHtmlFile;
