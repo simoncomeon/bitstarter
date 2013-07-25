@@ -1,6 +1,6 @@
 var express = require('express');
 var fs =require('fs');
-var htmlFile = "index.html";
+var htmlFile = "Lkss-bitstarter.html";
 
 var app = express.createServer(express.logger());
 
