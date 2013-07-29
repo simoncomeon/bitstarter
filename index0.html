@@ -1,15 +1,9 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-<<<<<<< HEAD
     <title>My First Bitstarter</title>
-    <link type="text/css" rel="stylesheet" 
-          href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
-=======
-    <title>BitLift</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -19,7 +13,6 @@
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
           rel="stylesheet" type="text/css">
->>>>>>> develop
     <style type="text/css">
 
       /* Large desktop */
@@ -34,6 +27,7 @@
          border-left: 1px white solid;
        }
       }
+
       /* Landscape phones and down */
       @media (max-width: 480px) { 
        .copy {
@@ -58,7 +52,7 @@
         text-align: center;
       }
       p.lead {
-        padding-top: 2.5%;
+        padding-top: 1.5%;
         font-size: 24px;
         line-height: 30px;
       }
@@ -108,36 +102,24 @@
   </head>
   <body>
 
- <div class="navbar navbar-inverse navbar-fixed-top">
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">BitLift</a>
+          <a class="brand" href="#">Bitstarter</a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-            <li><a href="#">Jobs</a></li>
-            <li><a href="#">BitLift with us</a></li>
-              <li><a href="#">About</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"> buy <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#"> BitLift coins</a></li>
-                  <li class="divider"></li>
-                  <li class="nav-header">Tickets</li>
-                  <li><a href="#">Events</a></li>
-                  <li><a href="#">Taxi</a></li>
-                </ul>
-              </li>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Email">
-              <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button>
-            </form>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -152,37 +134,18 @@
       <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
       <div class="row-fluid heading">
         <div class="span12">
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <h1>Bitstarter Master</h1>
-=======
-          <h1>Simoncomeon Title</h1>
->>>>>>> staging
-=======
-          <h1><font color="Green">Bitlift.se</font></h1>
->>>>>>> develop
+          <h1>Product</h1>
         </div>
       </div> 
       <div class="row-fluid subheading">
         <div class="span12">
-<<<<<<< HEAD
-<<<<<<< HEAD
-          <p class="lead"> <marquee>This is my first bitstarter project. master version Elvis sitter bredvid </marquee></p>
-      </div>
-=======
-          <p class="lead"><marquee>This is my first bitstarter project. Upgrading version</marquee></p>
-=======
           <!-- Special typography from Bootstrap for lead paragraph. -->
           <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead"> <font color= "GREEN"> Take a lift today!</font></p> 
-          <p> Save your time, money and the enviroment.</p>
->>>>>>> develop
+          <p class="lead">One sentence description.</p>
         </div>
->>>>>>> staging
       </div>
       <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-        <!--a href="http://imgur.com/6wIsQOC"><img class="img-polaroid"  src="http://i.imgur.com/6wIsQOC.jpg" title="Hosted by imgur.com"/></a-->
           <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
 
@@ -200,12 +163,12 @@
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$3000</h3> <p>of $10,000</p>
+                  <h3>$6000</h3> <p>of $10,000</p>
                 </div>
               </div>
               <div class="span4">
                 <div class="linediv-r">
-                <h3>30</h3> <p>days left</p>
+                <h3>10</h3> <p>days left</p>
                 </div>
               </div>
             </div>
@@ -214,14 +177,14 @@
             <!-- Bootstrap progress bar -->
             <!-- http://twitter.github.io/bootstrap/components.html#progress -->
             <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 30%;"></div>
-              <div class="bar bar-warning" style="width: 70%;"></div>
+              <div class="bar bar-success" style="width: 60%;"></div>
+              <div class="bar bar-warning" style="width: 40%;"></div>
             </div>
           </div>
           <div class="span6 offset3 order">
             <!-- Standard Bootstrap button. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Thumbs up!</button>
+            <button class="btn btn-success btn-large">Preorder</button>
           </div>
           <div class="span8 offset2 social">
             <!-- Social buttons are not included in default Bootstrap. -->
@@ -238,21 +201,21 @@
       <!-- http://placehold.it -->
       <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-        <a href="http://imgur.com/6wIsQOC"><img class="img-polaroid"  src="http://i.imgur.com/6wIsQOC.jpg" title="Hosted by imgur.com"/></a>
-        <!--a href="http://imgur.com/wK5X7iB"><img class= "img-plaroid" src="http://i.imgur.com/wK5X7iB.jpg" title="Hosted by imgur.com"/></a-->
-         <!-- <img class="img-polaroid" src="http://placehold.it/480x300" -->
+          <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
         <div class="span5 copy">
           <p>
-             BitLift is a social networking service that connects people who would
-            like to take a lift from a certain place, with people who are 
-            driving to the same destination. The lifter/s and driver will share the 
-            gas-money together, so it's win-win situation for both.
-          </p>  
-             <b>BitLIft Coin</b> - In order to avoid cash exchange between the bitLifters, 
-            the payment is done with BitLift-coins (virtual money) that one can 
-            purchase from the app. The driver in turn may 
-            buy gas from the gas-station with the BitLift-Coins earned.  
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+            mollis justo velit at nunc. Fusce nec egestas sem. Donec
+            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+            volutpat lorem ut congue malesuada. In facilisis scelerisque
+            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
+            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
+            rutrum, nunc leo tempus nisl, eu mollis justo velit at
+            nunc. Fusce nec egestas sem. Donec fringilla.
           </p>
         </div>
       </div>
@@ -260,22 +223,21 @@
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
           <p>
-            <b> BitLift-star </b>- To make it easy for anyone to choose who to BitLift with,
-            The drivers driving-skills and the lifter's hospitality are 
-            rated (out of 10) by the bitLifters. The Bitlifter with higher ratings
-            Have higher possibilities to be chosen to BitLift with.     
-            By connecting your account with other social medias, like facebook, 
-            twitter, etc...and by sharing the activity on social media, one can 
-            make the bitLifting experience safe and pleasant.
-          </p>  
-           <p><b>BitLift-Enviroment </b>- Remember, collective traffic saves the inviroment.
-            Bitlifter collects Bitlift-points whenever one bitlifts. Where you can win
-            special prices. 
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+            mollis justo velit at nunc. Fusce nec egestas sem. Donec
+            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+            volutpat lorem ut congue malesuada. In facilisis scelerisque
+            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
+            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
+            rutrum, nunc leo tempus nisl, eu mollis justo velit at
+            nunc. Fusce nec egestas sem. Donec fringilla.
           </p>
         </div>
         <div class="span5 asset">
-        <a href="http://imgur.com/PoBed4K"><img class ="img-polaroid" src="http://i.imgur.com/PoBed4K.jpg" title="Hosted by imgur.com"/></a>
-        
+          <img class="img-polaroid" src="http://placehold.it/480x300">
         </div>
       </div>
 
